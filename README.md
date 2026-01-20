@@ -1,3 +1,6 @@
+# Student-Feedback-Web-Application
+Student Feedback Web Application – A full-stack web app where students can submit feedback and view stored feedback using Node.js, Express, and MongoDB.
+
 # How to Run the Student Feedback App
 
 Since this is a static web application (HTML, CSS, JavaScript), you don't need to compile it. You just need to open it in a web browser.
