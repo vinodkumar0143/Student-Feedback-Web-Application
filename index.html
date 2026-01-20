@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback App</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Share your valuable feedback to help us improve our courses and teaching methods.">
+
+    <!-- Google Fonts for Premium Typography (Outfit) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Shapes -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="app-header">
+        <div class="container">
+            <h1 class="logo">EduFeedback</h1>
+            <p class="subtitle">Your voice matters. Help us improve.</p>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <div class="container">
+
+            <!-- Feedback Form Section -->
+            <section class="feedback-input-section">
+                <div class="card form-card">
+                    <h2 class="section-title">Submit Feedback</h2>
+                    <form id="feedbackForm" class="feedback-form">
+                        <div class="form-group">
+                            <label for="studentName" class="form-label">Student Name</label>
+                            <input type="text" id="studentName" class="form-input" placeholder="Enter your full name"
+                                autocomplete="off">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedbackText" class="form-label">Your Feedback</label>
+                            <textarea id="feedbackText" class="form-input form-textarea"
+                                placeholder="Share your thoughts..." rows="5" maxlength="500"></textarea>
+                            <div id="charCounter" class="char-counter">0/500</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <span>Submit Feedback</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Feedback Display Section -->
+            <section class="feedback-display-section">
+                <h2 class="section-title">Recent Feedback</h2>
+                <div id="feedbackContainer" class="feedback-grid">
+                    <!-- Feedback items will be added here dynamically -->
+                    <p style="text-align: center; color: var(--text-muted); grid-column: 1 / -1;">No feedback yet. Be
+                        the first!</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="container">
+            <p>&copy; 2024 Student Feedback App. Built with Vanilla JS & Semantic HTML.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
