@@ -17,12 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // [DEPLOYMENT CONFIGURATION]
     // Update the 'PRODUCTION_API_URL' below with your Render Backend URL after deployment.
     // Example: 'https://my-backend-app.onrender.com/api/feedback'
-    const PRODUCTION_API_URL = 'https://YOUR_BACKEND_URL_HERE/api/feedback';
+    const PRODUCTION_API_URL = 'https://student-feedback-web-application.onrender.com/api/feedback';
 
     // Automatically use Localhost if running locally, otherwise use Production URL
     const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     const API_URL = isLocalhost ? 'http://localhost:5000/api/feedback' : PRODUCTION_API_URL;
-    // ------------------------------------------------------------------------
     const MAX_CHARS = 500;
 
     // 3. Event Listeners
